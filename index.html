@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHU QUOC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="app">
+    <!-- Menu and banner -->
+    <div class="top-menu">
+      <div class="top-menu__logo">
+        <img src="./assets/img/logo-vinpearl.png" alt="logo" />
+      </div>
+      <ul class="top-menu__list">
+        <li>Đặt dịch vụ</li>
+        <li>Trải nghiệm vinpearl</li>
+        <li>Ưu đãi khuyến mại</li>
+        <li>Pearl Club</li>
+      </ul>
+      <div class="top-menu__info">
+        <div class="language">
+          <div class="language__icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <div class="login">
+          <i class="far fa-user"></i>
+          <p>Đăng nhập</p>
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu--mobile sticky" id="nav--mobile">
+      <div class="main-menu__list" onclick="handleClickIconMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="main-menu__logo">
+        <img id="main-menu__mobile--img" src="./assets/img/logo-vinpearl.png" alt="logo" />
+      </div>
+      <div class="main-menu--mobile__list" id="main-menu--mobile">
+        <li>Đặt dịch vụ</li>
+        <li>Trải nghiệm vinpearl</li>
+        <li>Ưu đãi khuyến mại</li>
+        <li>Pearl Club</li>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="main-menu" id="nav">
+        <div class="main-menu__logo">
+          <img id="main-menu__img" src="./assets/img/logo-phu-quoc.png" alt="logo" />
+        </div>
+        <div class="main-menu__list">
+          <ul>
+            <li>Nghỉ dưỡng</li>
+            <li>Ẩm thực</li>
+            <li>Khám phá</li>
+            <li>Show diễn & Lễ hội</li>
+            <li><i class="fas fa-bars"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slogan">
+        <div class="slogan__text">
+          <h1>Phú Quốc</h1>
+          <h2>we go.</h2>
+        </div>
+        <div class="slogan__scroll">
+          <div class="slogan__scroll--icon">
+            <img src="./assets/img/down-arrow-icon.png" />
+          </div>
+          <h4>KÉO XUỐNG ĐỂ TRẢI NGHIỆM
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- Menu and banner -->
+    <!-- Discover -->
+    <div class="discover">
+      <div class="discover__bg">
+        <div class="discover__video">
+          <i class="far fa-play-circle"></i>
+        </div>
+      </div>
+      <div class="discover__bg">
+        <div class="discover__description">
+          <h1>Siêu quần thể nghỉ dưỡng, vui chơi giải trí, mua sắm hàng đầu Đông Nam Á</h1>
+          <p>Hưởng trọn vẻ đẹp của thiên nhiên hoang sơ trải rộng trên diện tích hơn 1.000ha phía Bắc Đảo Ngọc, Phú Quốc
+            United Center mở ra cánh cửa đến với Vũ trụ Giải trí - Khám phá - Mua sắm - Nghỉ dưỡng - Lễ hội không ngủ
+            độc nhất vô nhị. Những bữa tiệc không ngơi nghỉ như tại Las Vegas, những lễ hội biển bất tận như tại Ibiza,
+            những trải nghiệm nghỉ dưỡng hàng đầu như Jeju... </p>
+          <button>KHÁM PHÁ NGAY</button>
+        </div>
+      </div>
+    </div>
+    <!-- Discover -->
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel__bg">
+        <div class="carousel__content">
+          <h1>Khám phá</h1>
+          <h2>những trải nghiệm chỉ có tại </h2>
+          <h3>Phú Quốc United Center</h3>
+          <div class="carousel__line"></div>
+          <div class="carousel__list">
+            <div class="carousel__img fade">
+              <img src="./assets/img/slide-img1.png" />
+              <h6>Check in với hàng triệu những góc sống ảo view cực đỉnh</h6>
+              <p>Xem chi tiết >></p>
+            </div>
+            <div class="carousel__img fade">
+              <img src="./assets/img/silde-img2.png" />
+              <h6>Check in với hàng triệu những góc sống ảo view cực đỉnh</h6>
+              <p>Xem chi tiết >></p>
+            </div>
+            <div class="carousel__img fade">
+              <img src="./assets/img/slide-img3.png" />
+              <h6>Check in với hàng triệu những góc sống ảo view cực đỉnh</h6>
+              <p>Xem chi tiết >></p>
+            </div>
+          </div>
+          <div class="carousel__list--mobile">
+            <div class="carousel__img fade">
+              <img src="./assets/img/slide-img1.png" />
+              <h6>Check in với hàng triệu những góc sống ảo view cực đỉnh</h6>
+              <p>Xem chi tiết >></p>
+            </div>
+          </div>
+          <div class="carousel__dot">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    /* activate sticky navigation */
+    $(document).ready(function () {
+      var stickyNav = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 84) {
+          $('#nav').addClass('sticky');
+          $('#main-menu__img').attr("src", "./assets/img/logo-phu-quoc-black.png");
+        } else {
+          $('#nav').removeClass('sticky');
+          $('#main-menu__img').attr("src", "./assets/img/logo-phu-quoc.png");
+        }
+        if (scrollTop > 0) {
+          $('#main-menu__mobile--img').attr("src", "./assets/img/logo-phu-quoc-black.png");
+        } else {
+          $('#main-menu__mobile--img').attr("src", "./assets/img/logo-vinpearl.png");
+        }
+      };
+      stickyNav();
+      $(window).scroll(function () {
+        stickyNav();
+      });
+    });
+  </script>
+
+  <script>
+    function handleClickIconMenu() {
+      var closeIcon = document.getElementById("main-menu--mobile");
+      if (closeIcon.className === "main-menu--mobile__list") {
+        closeIcon.className += " show-menu";
+      } else {
+        closeIcon.className = "main-menu--mobile__list";
+      }
+    }
+  </script>
+</body>
+
+</html>

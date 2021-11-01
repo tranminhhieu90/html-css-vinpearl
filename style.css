@@ -1,0 +1,658 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "SVN-Helga";
+  src: url("./assets/font/SVN-Helga.otf");
+}
+.app {
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* header  */
+.top-menu {
+  padding: 12px 150px;
+  display: flex;
+  height: 84px;
+}
+.top-menu__logo {
+  width: 91px;
+  height: 60px;
+  cursor: pointer;
+}
+.top-menu__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-menu__list {
+  display: flex;
+  text-transform: uppercase;
+  align-items: end;
+  font-size: 14px;
+  font-weight: bolder;
+  flex: 1;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+.top-menu__list li {
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.top-menu__info {
+  display: flex;
+}
+.login {
+  display: flex;
+  margin-left: 20px;
+  height: fit-content;
+  align-items: center;
+}
+
+.login p {
+  margin: 0 8px;
+  font-size: 13px;
+}
+
+.language {
+  display: flex;
+  margin-left: 20px;
+  height: fit-content;
+  align-items: center;
+}
+.language__icon {
+  background: red;
+  display: flex;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 8px;
+}
+
+.language__icon i {
+  font-size: 6px;
+  color: yellow;
+}
+
+.banner {
+  position: relative;
+  background-image: url("./assets/img/phu-quoc-bg.png");
+  height: 895px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-menu {
+  padding: 16px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu--mobile {
+  display: none;
+}
+.main-menu--mobile__list {
+  display: none;
+}
+.main-menu__list ul {
+  display: flex;
+}
+
+.main-menu__list ul li:not(:last-child) {
+  color: white;
+  margin: 0 24px;
+  cursor: pointer;
+}
+
+.main-menu__list ul li i {
+  color: white;
+  margin-left: 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sticky {
+  background-color: white;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  margin: auto;
+}
+.sticky .main-menu__list ul li {
+  color: black;
+}
+
+.sticky .main-menu__list ul li i {
+  color: black;
+}
+.slogan {
+  height: 376px;
+  padding-left: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.slogan__text {
+  padding-top: 0px;
+}
+.slogan h1 {
+  color: white;
+  font-family: "SVN-Helga";
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 100%;
+}
+.slogan h2 {
+  color: white;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 250px;
+  line-height: 50%;
+}
+.slogan__scroll {
+  display: flex;
+  align-items: end;
+  padding-right: 62px;
+  padding-bottom: 24px;
+}
+.slogan__scroll--icon {
+  margin-right: 24px;
+}
+.slogan__scroll h4 {
+  color: white;
+  display: block;
+  width: 200px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.195em;
+  padding-bottom: 6px;
+}
+/* Discover */
+.discover {
+  height: 453px;
+  display: flex;
+}
+.discover__bg {
+  width: 807px;
+  height: 100%;
+  background-image: url("./assets/img/discover-bg.png");
+  opacity: 0.8;
+  background-position: center;
+}
+
+.discover__video {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.discover__video i {
+  color: white;
+  font-size: 70px;
+}
+.discover__description {
+  background-color: white;
+  width: 539px;
+  height: 100%;
+  padding: 46px 56px;
+}
+.discover__description h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #008b6a;
+  margin-bottom: 16px;
+}
+
+.discover__description p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.discover__description button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 12px;
+  background: #fe4b4b;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 36px;
+}
+
+/* Carousel */
+.carousel {
+  height: 966px;
+}
+.carousel__bg {
+  background-image: url("./assets/img/graphics-bg.png");
+  height: 632px;
+  padding-top: 43px;
+}
+.carousel__content {
+  text-align: center;
+  line-height: 40px;
+}
+
+.carousel__content h1 {
+  font-family: SVN-Helga;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.carousel__content h2 {
+  font-size: 22px;
+  font-style: normal;
+  text-transform: lowercase;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.carousel__content h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.carousel__content .carousel__line {
+  height: 10px;
+  background-color: #fab005;
+  width: 55px;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 15px;
+}
+.carousel__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.carousel__list--mobile {
+  display: none;
+}
+.carousel__img {
+  width: 356px;
+  padding: 16px;
+  background-color: white;
+  margin: 0 18px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.carousel__img img {
+  width: 100%;
+}
+
+.carousel__img h6 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.carousel__img p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fe4b4b;
+  margin-top: 12px;
+}
+
+.carousel__dot {
+  margin-top: 32px;
+}
+.dot {
+  height: 16px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: #ced4da;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #fe4b4b;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.show-menu {
+  display: block;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .top-menu {
+    padding: 12px 30px;
+  }
+  .top-menu__list li {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  .main-menu {
+    padding: 12px 30px;
+  }
+  .slogan {
+    padding-left: 80px;
+  }
+  .slogan__text {
+    padding-top: 100px;
+  }
+  .slogan h1 {
+    font-size: 100px;
+  }
+  .slogan h2 {
+    font-size: 170px;
+  }
+  .slogan__scroll {
+    padding-right: 42px;
+  }
+  .discover__description {
+    width: 450px;
+    padding: 36px 46px;
+  }
+  .carousel {
+    height: 900px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .top-menu {
+    display: none;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 16px;
+  }
+  .main-menu--mobile .main-menu__list {
+    position: absolute;
+    left: 20px;
+  }
+
+  .main-menu--mobile .main-menu__list i {
+    color: #343a40;
+    margin-left: 24px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .main-menu--mobile__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 84px;
+    padding: 0 40px;
+    background: white;
+  }
+
+  .main-menu--mobile__list li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .main-menu--mobile__list li:hover {
+    color: #343a40;
+  }
+
+  .slogan {
+    padding-left: 0px;
+    display: block;
+    text-align: center;
+  }
+  .slogan__text {
+    padding-top: 0px;
+  }
+  .slogan h1 {
+    font-size: 100px;
+  }
+  .slogan h2 {
+    font-size: 120px;
+  }
+  .slogan__scroll {
+    padding: 0px;
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .slogan__scroll--icon {
+    margin-right: 0px;
+  }
+  .slogan__scroll h4 {
+    display: block;
+    margin: auto;
+    padding-bottom: 0px;
+  }
+  .discover {
+    display: block;
+    height: auto;
+  }
+  .discover__bg {
+    width: 100%;
+    background-size: contain;
+  }
+  .discover__video {
+    height: 420px;
+  }
+  .discover__description {
+    width: 100%;
+    padding: 30px;
+  }
+  .discover__description p {
+    text-align: left;
+  }
+  .discover__description button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .carousel {
+    height: 800px;
+  }
+}
+@media (max-width: 440px) {
+  .banner {
+    height: 710px;
+  }
+  .top-menu {
+    display: none;
+  }
+  .main-menu {
+    display: none;
+  }
+  .main-menu--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 16px;
+  }
+  .main-menu--mobile .main-menu__list {
+    position: absolute;
+    left: 20px;
+  }
+  .main-menu--mobile .main-menu__list i {
+    color: #343a40;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .main-menu--mobile__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 84px;
+    padding: 0 20px;
+    background: white;
+  }
+
+  .main-menu--mobile__list li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .main-menu--mobile__list li:hover {
+    color: #343a40;
+  }
+  .slogan {
+    padding-left: 0px;
+    display: block;
+    text-align: center;
+    height: 300px;
+  }
+  .slogan__text {
+    padding-top: 0px;
+  }
+  .slogan h1 {
+    font-size: 60px;
+  }
+  .slogan h2 {
+    font-size: 80px;
+  }
+  .slogan__scroll {
+    padding: 0px;
+    display: block;
+    text-align: center;
+    margin-top: 48px;
+  }
+  .slogan__scroll--icon {
+    margin-right: 0px;
+  }
+  .slogan__scroll h4 {
+    display: block;
+    margin: auto;
+    padding-bottom: 0px;
+    font-size: 14px;
+    width: 190px;
+  }
+  .discover {
+    display: block;
+    height: auto;
+  }
+  .discover__bg {
+    width: 100%;
+    background-size: contain;
+  }
+  .discover__video {
+    height: 210px;
+  }
+  .discover__description {
+    width: 100%;
+    padding: 20px 16px;
+  }
+  .discover__description h1 {
+    text-align: left;
+    font-size: 20px;
+  }
+  .discover__description p {
+    text-align: left;
+    font-size: 16px;
+  }
+  .discover__video i {
+    font-size: 48px;
+  }
+  .discover__description button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .carousel {
+    height: 750px;
+  }
+  .carousel__content {
+    line-height: 28px;
+  }
+  .carousel__content h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .carousel__content h2 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .carousel__content h3 {
+    font-size: 18px;
+  }
+  .carousel__list {
+    display: none;
+  }
+  .carousel__list--mobile {
+    display: flex;
+    margin-top: 20px;
+  }
+}
